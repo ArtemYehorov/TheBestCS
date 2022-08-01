@@ -8,7 +8,7 @@ int main()
 	bool e = true;
 	while (e)
 	{
-		cout << "Выбор оружия\n1 - Нож\n2 - Пистолет\n3 - Автомат\n4 - Дробовик\n5 - Пистолет-пулемёт\n6 - Снайперка\n7 - ПУЛЕМЁТ";
+		cout << "Weapon selection\n1 - Knife\n2 - Pistol\n3 - Automatic rifle\n4 - Shotgun\n5 - Submachine gun\n6 - Sniper\n7 - MACHINE GUN";
 		choise = _getch();
 		system("cls");
 		if (choise == 49)
@@ -17,8 +17,8 @@ int main()
 			bool end = true;
 			while (end)
 			{
-				cout << "Перед вами мишень.\nЧто вы хотите сделать?\n";
-				cout << "R - Посмотреть количество снарядов\nENTER - Метнуть нож в цель\nSPACE - Прицелиться\n0 - сменить оружие\n";
+				cout << "There is a target in front of you.\nWhat do you want to do?\n";
+				cout << "R - View number of projectiles\nENTER - Throw knife at target\nSPACE - Aim\n0 - Change weapon\n";
 
 				int action = _getch();
 				if (action == 224)
@@ -34,7 +34,7 @@ int main()
 						end = false;
 						system("cls");
 				}
-				else cout << "Не корректно, по пробуйте еще раз!\n";
+				else cout << "Not correct, please try again!\n";
 			}
 		}
 		else if (choise == 50)
@@ -43,8 +43,8 @@ int main()
 			bool end = true;
 			while (end)
 			{
-				cout << "Перед вами мишень.\nЧто вы хотите сделать?\n";
-				cout << "R - Перезарядка\nENTER - Выстрелить\nSPACE - Прицелиться\n0 - сменить оружие\n";
+				cout << "There is a target in front of you.\nWhat do you want to do?\n";
+				cout << "R - Reload\nENTER - Shoot\nSPACE - Aim\n0 - Change weapon\n";
 
 				int action = _getch();
 				if (action == 224)
@@ -60,7 +60,7 @@ int main()
 					end = false;
 					system("cls");
 				}
-				else cout << "Не корректно, по пробуйте еще раз!\n";
+				else cout << "Not correct, please try again!\n";
 			}
 		}
 		else if (choise == 51)
@@ -69,8 +69,8 @@ int main()
 			bool end = true;
 			while (end)
 			{
-				cout << "Перед вами мишень.\nЧто вы хотите сделать?\n";
-				cout << "R - Перезарядка\nENTER - Выстрелить\nSPACE - Прицелиться\n0 - сменить оружие\n";
+				cout << "There is a target in front of you.\nWhat do you want to do?\n";
+				cout << "R - Reload\nENTER - Shoot\nSPACE - Aim\n0 - Change weapon\n";
 
 				int action = _getch();
 				if (action == 224)
@@ -86,7 +86,7 @@ int main()
 					end = false;
 					system("cls");
 				}
-				else cout << "Не корректно, по пробуйте еще раз!\n";
+				else cout << "Not correct, please try again!\n";
 			}
 		}
 		else if (choise == 52)
@@ -95,8 +95,8 @@ int main()
 			bool end = true;
 			while (end)
 			{
-				cout << "Перед вами мишень.\nЧто вы хотите сделать?\n";
-				cout << "R - Перезарядка\nENTER - Выстрелить\nSPACE - Прицелиться\n0 - сменить оружие\n";
+				cout << "There is a target in front of you.\nWhat do you want to do?\n";
+				cout << "R - Reload\nENTER - Shoot\nSPACE - Aim\n0 - Change weapon\n";
 
 				int action = _getch();
 				if (action == 224)
@@ -112,7 +112,7 @@ int main()
 					end = false;
 					system("cls");
 				}
-				else cout << "Не корректно, по пробуйте еще раз!\n";
+				else cout << "Not correct, please try again!\n";
 			}
 		}
 		else if (choise == 53)
@@ -121,8 +121,8 @@ int main()
 			bool end = true;
 			while (end)
 			{
-				cout << "Перед вами мишень.\nЧто вы хотите сделать?\n";
-				cout << "R - Перезарядка\nENTER - Выстрелить\nSPACE - Прицелиться\n0 - сменить оружие\n";
+				cout << "There is a target in front of you.\nWhat do you want to do?\n";
+				cout << "R - Reload\nENTER - Shoot\nSPACE - Aim\n0 - Change weapon\n";
 
 				int action = _getch();
 				if (action == 224)
@@ -138,7 +138,7 @@ int main()
 					end = false;
 					system("cls");
 				}
-				else cout << "Не корректно, по пробуйте еще раз!\n";
+				else cout << "Not correct, please try again!\n";
 			}
 		}
 		else if (choise == 54)
@@ -147,8 +147,8 @@ int main()
 		bool end = true;
 		    while (end)
 		    {
-		    	cout << "Перед вами мишень.\nЧто вы хотите сделать?\n";
-		    	cout << "R - Перезарядка\nENTER - Выстрелить\nSPACE - Прицелиться\n0 - сменить оружие\n";
+				cout << "There is a target in front of you.\nWhat do you want to do?\n";
+				cout << "R - Reload\nENTER - Shoot\nSPACE - Aim\n0 - Change weapon\n";
 		    
 		    	int action = _getch();
 		    	if (action == 224)
@@ -164,7 +164,7 @@ int main()
 		    		end = false;
 		    		system("cls");
 		    	}
-		    	else cout << "Не корректно, по пробуйте еще раз!\n";
+		    	else cout << "Not correct, please try again!\n";
 		    }
 		}
 		else if (choise == 55)
@@ -173,8 +173,8 @@ int main()
 		    bool end = true;
 		    while (end)
 		    {
-		    	cout << "Перед вами мишень.\nЧто вы хотите сделать?\n";
-		    	cout << "R - Перезарядка\nENTER - Выстрелить\nSPACE - Прицелиться\n0 - сменить оружие\n";
+				cout << "There is a target in front of you.\nWhat do you want to do?\n";
+				cout << "R - Reload\nENTER - Shoot\nSPACE - Aim\n0 - Change weapon\n";
 		    
 		    	int action = _getch();
 		    	if (action == 224)
@@ -190,12 +190,12 @@ int main()
 		    		end = false;
 		    		system("cls");
 		    	}
-		    	else cout << "Не корректно, по пробуйте еще раз!\n";
+		    	else cout << "Not correct, please try again!\n";
 		    }
 		}
 		else
 	    {
-		cout << "введино не корректно!\n";
+		   cout << "Not correct, please try again!\n";
 	    }
 
 	}

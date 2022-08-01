@@ -14,7 +14,7 @@ public:
 	short Action1()
 	{
 		system("cls");
-		cout << "Вы перезарядились!\n";
+		cout << "You reloaded!\n";
 		return Countpatron;
 	}
 
@@ -23,8 +23,8 @@ public:
 		int choise = 1;
 		while (choise != 48)
 		{
-			cout << "У вас " << Countpatron << " патронов\n";
-			cout << "ENTER - Выстрел\tR - Перезарядка\n0 - Перестать стрелять\n";
+			cout << "You have " << Countpatron << " cartridges\n";
+			cout << "ENTER - Shot\tR - Reload\n0 - Stop shooting\n";
 			choise = _getch();
 			if (choise == ENTER)
 			{
@@ -64,13 +64,13 @@ public:
 		if (!aiming)
 		{
 			system("cls");
-			cout << "Вы прицелились\n";
+			cout << "You aimed\n";
 			return aiming = true;
 		}
 		else
 		{
 			system("cls");
-			cout << "Вы перестали прицеливаться!\n";
+			cout << "You stopped aiming!\n";
 			return aiming = false;
 		}
 	}
@@ -86,23 +86,23 @@ public:
 	virtual short Action1() 
 	{
 		system("cls");
-		if (Countpatron == 1) cout << "У вас ОДИН нож!\n";
-		else cout << "Вы выкинули свой нож!\n";
+		if (Countpatron == 1) cout << "You have ONE knife!\n";
+		else cout << "You threw away your knife!\n";
 		int Podbor = 0;
 		if (Countpatron == 0)
 		{
-			cout << "Подобрать нож?\n1 - Да\t0 - Нет";
+			cout << "Pick up a knife?\n1 - Yes\t0 - No";
 			Podbor = _getch();
 			if (Podbor == 49)
 			{
 				system("cls");
-				cout << "Вы подобрали нож \n";
+				cout << "You picked up a knife \n";
 				return Countpatron++;
 			}
 			else
 			{
 				system("cls");
-				cout << "Вы отказались подбирать нож!!\n";
+				cout << "You refused to pick up the knife!!\n";
 				return Countpatron;
 			}
 		}
@@ -113,7 +113,7 @@ public:
 		if (Countpatron == 1)
 		{
 			system("cls");
-			cout << "Вы метнули нож в цель!\n";
+			cout << "You threw a knife at the target!\n";
 			return Countpatron--;
 		}
 		else
@@ -121,22 +121,6 @@ public:
 			system("cls");
 			Action1();
 			return Countpatron;
-		}
-	}
-
-	virtual bool Action3() 
-	{
-		if (!aiming)
-		{
-			system("cls");
-			cout << "Вы прицелились\n";
-			return aiming = true;
-		}
-		else
-		{
-			system("cls");
-			cout << "Вы перестали прицеливаться!\n";
-			return aiming = false;
 		}
 	}
 
@@ -151,7 +135,7 @@ public:
 	virtual short Action1()
 	{
 		system("cls");
-		cout << "Вы перезарядились!\n";
+		cout << "You reloaded!\n";
 		return Countpatron = 12;
 	}
 
@@ -160,13 +144,13 @@ public:
 		int choise = 1;
 		while (choise != 48)
 		{
-			cout << "У вас " << Countpatron << " патронов\n";
-			cout << "ENTER - Выстрел\tR - Перезарядка\n0 - Перестать стрелять\n";
+			cout << "You have " << Countpatron << " cartridges\n";
+			cout << "ENTER - Shot\tR - Reload\n0 - Stop shooting\n";
 			choise = _getch();
 			if (choise == ENTER)
 			{
 				system("cls");
-				cout << "Выстрел!\n";
+				cout << "Shot!\n";
 				--Countpatron;
 			}
 			else if (choise == R || choise == r)
@@ -176,11 +160,11 @@ public:
 			else
 			{
 				system("cls");
-				cout << "Введино не корректно!\n";
+				cout << "Invalid input!\n";
 			}
 			if (Countpatron == 0)
 			{
-				cout << "Перезарядиться?\nR - Да\t0 - Выбор другого действия";
+				cout << "Reload?\nR - Yes\t0 - Select another action";
 				choise = _getch();
 				if (choise == R || choise == r)
 				{
@@ -205,22 +189,22 @@ public:
 	virtual short Action1() 
 	{
 		system("cls");
-		cout << "Вы перезарядились!\n";
+		cout << "You reloaded!\n";
 		return Countpatron = 30;
 	}
 
-	virtual short Action2() 
+	virtual short Action2()
 	{
 		int choise = 1;
 		while (choise != 48)
 		{
-			cout << "У вас " << Countpatron << " патронов\n";
-			cout << "ENTER - Выстрел\tR - Перезарядка\n0 - Перестать стрелять\n";
+			cout << "You have " << Countpatron << " cartridges\n";
+			cout << "ENTER - Shot\tR - Reload\n0 - Stop shooting\n";
 			choise = _getch();
 			if (choise == ENTER)
 			{
 				system("cls");
-				cout << "Выстрел!\n";
+				cout << "Shot!\n";
 				--Countpatron;
 			}
 			else if (choise == R || choise == r)
@@ -230,11 +214,11 @@ public:
 			else
 			{
 				system("cls");
-				cout << "Введино не корректно!\n";
+				cout << "Invalid input!\n";
 			}
 			if (Countpatron == 0)
 			{
-				cout << "Перезарядиться?\nR - Да\t0 - Выбор другого действия";
+				cout << "Reload?\nR - Yes\t0 - Select another action";
 				choise = _getch();
 				if (choise == R || choise == r)
 				{
@@ -259,7 +243,7 @@ public:
 	virtual short Action1()
 	{
 		system("cls");
-		cout << "Вы перезарядились!\n";
+		cout << "You reloaded!\n";
 		return Countpatron = 8;
 	}
 
@@ -268,13 +252,13 @@ public:
 		int choise = 1;
 		while (choise != 48)
 		{
-			cout << "У вас " << Countpatron << " патронов\n";
-			cout << "ENTER - Выстрел\tR - Перезарядка\n0 - Перестать стрелять\n";
+			cout << "You have " << Countpatron << " cartridges\n";
+			cout << "ENTER - Shot\tR - Reload\n0 - Stop shooting\n";
 			choise = _getch();
 			if (choise == ENTER)
 			{
 				system("cls");
-				cout << "Выстрел!\n";
+				cout << "Shot!\n";
 				--Countpatron;
 			}
 			else if (choise == R || choise == r)
@@ -284,11 +268,11 @@ public:
 			else
 			{
 				system("cls");
-				cout << "Введино не корректно!\n";
+				cout << "Invalid input!\n";
 			}
 			if (Countpatron == 0)
 			{
-				cout << "Перезарядиться?\nR - Да\t0 - Выбор другого действия";
+				cout << "Reload?\nR - Yes\t0 - Select another action";
 				choise = _getch();
 				if (choise == R || choise == r)
 				{
@@ -313,7 +297,7 @@ public:
 	virtual short Action1()
 	{
 		system("cls");
-		cout << "Вы перезарядились!\n";
+		cout << "You reloaded!\n";
 		return Countpatron = 21;
 	}
 
@@ -322,13 +306,13 @@ public:
 		int choise = 1;
 		while (choise != 48)
 		{
-			cout << "У вас " << Countpatron << " патронов\n";
-			cout << "ENTER - Выстрел\tR - Перезарядка\n0 - Перестать стрелять\n";
+			cout << "You have " << Countpatron << " cartridges\n";
+			cout << "ENTER - Shot\tR - Reload\n0 - Stop shooting\n";
 			choise = _getch();
 			if (choise == ENTER)
 			{
 				system("cls");
-				cout << "Выстрел!\n";
+				cout << "Shot!\n";
 				--Countpatron;
 			}
 			else if (choise == R || choise == r)
@@ -338,11 +322,11 @@ public:
 			else
 			{
 				system("cls");
-				cout << "Введино не корректно!\n";
+				cout << "Invalid input!\n";
 			}
 			if (Countpatron == 0)
 			{
-				cout << "Перезарядиться?\nR - Да\t0 - Выбор другого действия";
+				cout << "Reload?\nR - Yes\t0 - Select another action";
 				choise = _getch();
 				if (choise == R || choise == r)
 				{
@@ -367,7 +351,7 @@ public:
 	virtual short Action1()
 	{
 		system("cls");
-		cout << "Вы перезарядились!\n";
+		cout << "You reloaded!\n";
 		return Countpatron = 5;
 	}
 
@@ -376,13 +360,13 @@ public:
 		int choise = 1;
 		while (choise != 48)
 		{
-			cout << "У вас " << Countpatron << " патронов\n";
-			cout << "ENTER - Выстрел\tR - Перезарядка\n0 - Перестать стрелять\n";
+			cout << "You have " << Countpatron << " cartridges\n";
+			cout << "ENTER - Shot\tR - Reload\n0 - Stop shooting\n";
 			choise = _getch();
 			if (choise == ENTER)
 			{
 				system("cls");
-				cout << "Выстрел!\n";
+				cout << "Shot!\n";
 				--Countpatron;
 			}
 			else if (choise == R || choise == r)
@@ -392,11 +376,11 @@ public:
 			else
 			{
 				system("cls");
-				cout << "Введино не корректно!\n";
+				cout << "Invalid input!\n";
 			}
 			if (Countpatron == 0)
 			{
-				cout << "Перезарядиться?\nR - Да\t0 - Выбор другого действия";
+				cout << "Reload?\nR - Yes\t0 - Select another action";
 				choise = _getch();
 				if (choise == R || choise == r)
 				{
@@ -421,7 +405,7 @@ public:
 	virtual short Action1()
 	{
 		system("cls");
-		cout << "Вы перезарядились!\n";
+		cout << "You reloaded!\n";
 		return Countpatron = 300;
 	}
 
@@ -430,19 +414,19 @@ public:
 		int choise = 1;
 		while (choise != 48)
 		{
-			cout << "У вас " << Countpatron << " патронов\n";
-			cout << "ENTER - Выстрел\tR - Перезарядка\n0 - Перестать стрелять\n";
+			cout << "You have " << Countpatron << " cartridges\n";
+			cout << "ENTER - Shot\tR - Reload\n0 - Stop shooting\n";
 			choise = _getch();
 			if (choise == ENTER)
 			{
-				cout << "ENTER - одиночный выстрел\nD - уничтожение!\n";
+				cout << "ENTER - single shot\nD - kill!\n";
 				choise = _getch();
 				if (choise == 68 || choise == 100)
 				{
 					for (int i = Countpatron; i >= 0 ; i--)
 					{
 						system("cls");
-						cout << i << " выстрел!\n";
+						cout << i << "shot!\n";
 					}
 					Countpatron = 0;
 				}
@@ -450,7 +434,7 @@ public:
 				{
 
 					system("cls");
-					cout << "Выстрел!\n";
+					cout << "Shot!\n";
 					--Countpatron;
 				}
 			}
@@ -461,11 +445,11 @@ public:
 			else
 			{
 				system("cls");
-				cout << "Введино не корректно!\n";
+				cout << "Invalid input!\n";
 			}
 			if (Countpatron == 0)
 			{
-				cout << "Перезарядиться?\nR - Да\t0 - Выбор другого действия";
+				cout << "Reload?\nR - Yes\t0 - Select another action";
 				choise = _getch();
 				if (choise == R || choise == r)
 				{
