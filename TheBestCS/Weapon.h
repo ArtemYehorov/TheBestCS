@@ -11,14 +11,14 @@ public:
 	bool aiming = false;
 	unsigned short Countpatron;
 
-	short Action1()
+	virtual short Action1()
 	{
 		system("cls");
 		cout << "You reloaded!\n";
 		return Countpatron;
 	}
 
-	short Action2()
+	virtual short Action2()
 	{
 		int choise = 1;
 		while (choise != 48)
@@ -59,7 +59,7 @@ public:
 		}
 	}
 
-	bool Action3()
+	virtual bool Action3()
 	{
 		if (!aiming)
 		{
